@@ -111,7 +111,7 @@ def evaluate_by_len(model_generator, input_encoder, output_spec, seqs, raw_Y, st
     results = pd.DataFrame(results, index = results_names)
     results.index.name = 'Model seq len'
     
-    return results, confusion_matrix
+    return y_pred, results, confusion_matrix
 
 def get_evaluation_results(y_true, y_pred, output_spec, return_confusion_matrix = False):
 
